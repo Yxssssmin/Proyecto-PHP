@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Agencia de viajes</title>
+</head>
+
+<body>
+    
+ <section class="si">
+
+    <img class="imagen" src="./imagenes/logo.png" width="400"  alt=""> 
+    <h1>AGENCIA DE VIAJES</h1>
+        
+
+    <form action="./contenido.php" method="get" id="formulario">
+
+        <br>
+        <h3> 𝘿𝘼𝙏𝙊𝙎 𝙋𝙀𝙍𝙎𝙊𝙉𝘼𝙇𝙀𝙎 </h3> <br>
+        <label for="Nombre completo">Nombre y Apellidos:</label>
+        <input class="controles" type="text" name="nombre" size="40" maxlength="50" required=""><br>
+        <br>
+        <label for="email">Email:</label>
+        <input class="controles" type="email" id="email" name="email" size="40" maxlength="50" autocomplete="off" required><br>
+        <br>
+        <label for="telefono">Teléfono:</label>
+        <input class="controles" type="number" id="telefono" name="telefono" size="40" maxlength="50" placeholder="+34" required=""><br>
+        <br>
+        <label for="Nacionalidad">Nacionalidad:</label>
+        <input class="controles" type="text" id="nombre" name="Nacionalidad"  required=""><br>
+
+        <br>
+        <h3> 𝙁𝙀𝘾𝙃𝘼 </h3> <br>
+        <label for="fechahora">Fecha y hora de salida:</label>
+        <input class="controles" type="datetime-local" id="fechahora" name="bdaytime"><br>
+        <label for="fechahora">Fecha y hora de vuelta :</label>
+        <input class="controles" type="datetime-local" id="fechahora" name="bdaytime1"><br>
+
+        <br>
+        <h3> 𝙍𝙀𝙎𝙀𝙍𝙑𝘼 </h3><br>
+        <label for="number">NUMERO DE ADULTOS</label>
+        <input class="controles" name="nadultos" list="number">
+        <datalist id="number">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+            <option value="Más de 10"></option>
+        </datalist> <br>
+
+        <br>
+        <h4><label for="EDAD">EDAD ADULTOS: </label></h4>
+        <input type="radio" name="edad" value="18-30"> 18-30
+        <input type="radio" name="edad" value="31-50"> 31-50 <br>
+        <input type="radio" name="edad" value="51-64"> 51-64
+        <input type="radio" name="edad" value="65+"> 65+
+        <br>
+
+        <br>
+        <h4>TIPO DE ACOMODACIÓN</h4>
+        <input type="radio" name="puntuacion" value="3estrellas"> 3 estrellas
+        <input type="radio" name="puntuacion" value="4estrellas"> 4 estrellas
+        <input type="radio" name="puntuacion" value="5estrellas"> 5 estrellas
+        <br>
+
+        <br>
+        <h4>¿A QUÉ PAÍS LE GUSTARÍA VIAJAR? 💬 </h4>
+        <input type="radio" name="paises" value="Marruecos"> Marruecos
+        <input type="radio" name="paises" value="EEUU"> EEUU
+        <input type="radio" name="paises" value="España"> España
+        <input type="radio" name="paises" value="Turquia"> Turquia
+        <input type="radio" name="paises" value="Francia"> Francia
+        <br>
+
+        
+        <br>
+        <h3> INTRODUZCA UNA OPINIÓN SOBRE LA PÁGINA <textarea name="cadena" id="cadena" cols="75" rows="10"></textarea></h3>
+        
+        <br>
+        <p><input type="checkbox" name="acepto"> Estoy de acuerdo con los <a href="https://www.winrar.es/legal">Terminos y Condiciones</a></p>
+
+        <br>
+        <input class="botons" type="submit" value="Enviar"><a href="./contenido.php"></a>
+
+        
+
+    </form>
+
+    <br>
+    <footer>
+        <pre> Yasmin Tate </pre>
+        <pre> Entornos de Desarrollamiento </pre>
+    </footer>
+
+    </section>
+
+</body>
+</html>
